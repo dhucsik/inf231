@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+header{
+    background-image: url('../img/header-bkg.jpg');
+    width: 100%;
+    padding: 10px 0px; 
+    box-sizing: border-box;
+    border: hsl(0, 0%, 100%) solid 12px;
+    display: flex;
+    z-index: 15;
+    position: fixed;
+ }
+ #headerdiv>ul{
+     margin-top: 22px;
+ }
+ ul>a{
+     list-style: none;
+     display: inline;
+     font-size: 40px;
+     margin-right: 70px;
+     font-family: 'Great Vibes', cursive;
+     font-weight: bold;
+     opacity: 0.9;
+     color: black;
+     text-decoration: none;
+ }
+ ul>a:hover{
+     color:rgb(165, 41, 41);
+     text-decoration: underline;
+ }
+ #headerdiv{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+ }
+ #Santaland{
+     color: #750d0d;
+     font-size: 45px;
+     margin-left: 50px;
+     margin-right: 60px;
+     margin-top: 16px;
+     font-family: 'Prata', serif;
+     font-weight: 700;
+ }
+.header-sec{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 170px;
+
+}
+#title{
+    color: black;
+    font-size: 52px;
+    font-family: Arial, sans-serif;
+    margin-left: 20px;
+}
+.images img{
+    width: 520px;
+    height: 369px;
+}
+.almaty{
+    position: relative;
+    width: 520px;
+}
+.astana{
+    position: relative;
+    width: 520px;
+}
+.ten{
+    position: relative;
+    width: 520px;
+}
+.ten::after{
+    margin-top: 20px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 520px;
+    height: 369px;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+}
+#asta{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+}
+#ata{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    width: 100%;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.prodazha{
+    background-color: rgb(218, 218, 218);
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tn-header{
+    display: flex;
+    flex-direction: row;
+}
+.tn-item{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+.info{
+    margin-left: 28px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.reg-input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 400px;
+    background-color: rgb(218, 218, 218);
+    height: 40px;
+    margin-top: 40px;
+    outline: none;
+}
+.checkbox{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checkbox-input{
+    display: none;
+    outline-style: none;
+}
+.checkbox-box{
+    width: 20px;
+    border: 2px solid black;
+    height: 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: border-color 0.15s;
+}
+.checkbox-box::after{
+    content: '\2714';
+    color: rgb(218, 218, 218);
+}
+.checkbox-input:checked + .checkbox-box{
+    background: #2266dc;
+    border-color: #2266dc;
+}
+button{
+    width: 180px;
+    height: 50px;
+    background-color: red;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 10px 30px 50px;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.menu a{
+    text-decoration: none;
+    margin-top: 15px;
+    color: rgba(66, 66, 66, 0.699);
+
+}
+.menu a:hover{
+    color: rgba(66, 66, 66, 0.699);
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.checkbox2{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checkbox-input2{
+    display: none;
+    outline-style: none;
+}
+.checkbox-box2{
+    width: 20px;
+    border: 2px solid black;
+    height: 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: border-color 0.15s;
+}
+.checkbox-box2::after{
+    content: '\2714';
+    color: white;
+}
+.checkbox-input2:checked + .checkbox-box2{
+    background: red;
+    border-color: red;
+}
+@media (max-width:1440px){
+    header{
+        width: 100%;
+        border: white solid 10px;
+    }
+    header>ul{
+        margin-top: 25px;
+    }
+    #Santaland{
+        font-size: 40px;
+        margin-left: 40px;
+        margin-right: 45px;
+        margin-top: 18px;
+    }
+}
+@media (max-width:1024px){
+    header{
+        border: white solid 8px;
+    }
+    #headerdiv>ul{
+        margin-top: 18px;
+    }
+    ul>a{
+        font-size: 30px;
+        margin-right: 45px;
+    }
+    #Santaland{
+        font-size: 27px;
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 16px;
+    }
+}
+@media (max-width:768px) {
+    header{
+        border: white solid 8px;
+    }
+    #headerdiv>ul{
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+    ul>a{
+        list-style: none;
+        display: inline;
+        font-size: 25px;
+        margin-right: 22px;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bold;
+        opacity: 0.9;
+        color: black;
+        text-decoration: none;
+    }
+    #Santaland{
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+}

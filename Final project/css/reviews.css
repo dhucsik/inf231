@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    font-family: 'Prata', serif; 
+}
+body{
+width: 100%;
+}
+header{
+    background-image: url('../img/background7.jpg');
+    width: 100%;
+    padding: 10px 0px; 
+    box-sizing: border-box;
+    border: hsl(0, 0%, 100%) solid 12px;
+    display: flex;
+    z-index: 15;
+ }
+ ul{
+     margin-top: 22px;
+ }
+ul>a{
+     list-style: none;
+     display: inline;
+     font-size: 40px;
+     margin-right: 70px;
+     font-family: 'Great Vibes', cursive;
+     font-weight: bold;
+     opacity: 0.9;
+     color: black;
+     text-decoration: none;
+ }
+ a:hover{
+     color:rgb(165, 41, 41);
+     text-decoration: underline;
+ }
+ #headerdiv{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+ }
+ #Santaland{
+     color: #750d0d;
+     font-size: 45px;
+     margin-left: 50px;
+     margin-right: 60px;
+     margin-top: 16px;
+     font-family: 'Prata', serif;
+     font-weight: 700;
+ }
+section{
+    background:rgb(174, 194, 233);
+    padding-top: 5%;
+    width: 100%;
+}
+section h4{
+    text-align:center;
+    margin-bottom: 2%;
+    font-size: 3rem;
+}
+.card2{
+    background-color:#ffffff;
+       width:70%;
+      margin-bottom: 5%;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction:row;
+   }
+   .text h3{
+    text-align: center;
+    margin-bottom: 2%;
+   }
+
+   @media (max-width:1440px){
+    header{
+        width: 100%;
+        border: white solid 10px;
+    }
+    ul{
+        margin-top: 25px;
+    }
+    #Santaland{
+        font-size: 40px;
+        margin-left: 40px;
+        margin-right: 45px;
+        margin-top: 18px;
+    }
+}
+
+@media (max-width:1024px){
+    header{
+        border: white solid 8px;
+    }
+    ul{
+        margin-top: 18px;
+    }
+    ul>a{
+        font-size: 30px;
+        margin-right: 45px;
+    }
+    #Santaland{
+        font-size: 27px;
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 16px;
+    }
+    section h4{
+        text-align:center;
+        margin-bottom: 2%;
+        font-size: 2rem;
+    }
+}
+@media (max-width:768px){
+
+    header{
+        border: white solid 8px;
+    }
+    ul{
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+    ul>a{
+        list-style: none;
+        display: inline;
+        font-size: 25px;
+        margin-right: 22px;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bold;
+        opacity: 0.9;
+        color: black;
+        text-decoration: none;
+    }
+    #Santaland{
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+    section h4{
+        text-align:center;
+        margin-bottom: 2%;
+        font-size: 2rem;
+    }
+}

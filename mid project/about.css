@@ -1,0 +1,105 @@
+header{
+position: fixed;
+width: 100%;
+float: left;
+padding: 10px 0.5% 0px 0.5%;
+background: transparent;
+}
+
+.logo{
+color: #fff;
+cursor: pointer;
+}
+
+.logo p{
+text-decoration: none;
+font-size: 35px;
+letter-spacing: 5px;
+text-align: center;
+}
+
+@media (min-width:701px){
+.logo{
+float: left;
+width: 30%;
+font-size: 35px;
+}
+
+.right{
+float: right;
+width: 67%;
+}
+}
+
+@media (max-width: 700px){
+.logo{
+margin-top: 15px;
+width: 100%;
+font-size: 30px;
+}
+
+.right{
+float: left;
+width: 100%;
+}
+}
+
+.right{
+display: flex;
+justify-content: center;
+line-height: 40px;
+margin-bottom: 100px;
+}
+
+.right button{
+margin: 7px;
+}
+
+.content{
+width: 100%;
+background-image: url(img/university-demriel.jpg);
+background-blend-mode: multiply;
+background-color: #2e3a44;
+background-size: cover;
+}
+
+.content h2{
+padding-top: 20%;
+text-align: center;
+font-size: 32px;
+color: white;
+}
+
+@media (min-width: 1001px){
+.content{
+height: 1000px;
+}
+}
+
+@media (max-width: 1000px) and (min-width: 651px){
+.content{
+height: 600px;
+}
+}
+
+@media (max-width: 650px){
+.content{
+padding-top: 50%;
+}
+}
+
+.f h4, .f p{
+margin-left: 15px;
+color: white;
+}
+
+.f h3{
+color: white;
+}
+
+th, td{
+color: white;
+}
+
+
+

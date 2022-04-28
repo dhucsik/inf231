@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script src = "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Services.css">
+</head>
+<body >
+    <header>
+        <div id = "headerdiv">
+            <p id = "Santaland">Santaland</p>
+            <ul>
+                <a href="Home.html">Home</a>
+                <a style = "color:rgb(165, 41, 41);" href="">Services</a>
+                <a href="shop.html"> Online Shop</a>
+                <a href="holiday-joy.html">Holiday Joy</a>
+                <a href="contacts.html">Contacts</a>
+            </ul>
+        </div>
+    </header>
+    <section >
+        <p id = "Services">Services</p>
+        <div id = "mainContainer">
+            
+            <div class = "ContainerOffOn" id = "ContainerOffline">
+             <p class = "OffOnVisit">Offline Visit</p>
+             <div class = "infoContainer">
+               <img src="img/offlinevisit.jpg" alt="">
+               <p class = "textInInfoContainer">To feel the real and incredible atmosphere of the Christmas holiday, we recommend you to choose Offline Visit Service. In offline visit, Santa will come to your home and knock the door with fabulous voice. Little members of your family who trust the miracle of Santa Claus will be delighted to see the real Santa at the home and will gladly recite poems to get from Santa desired gifts.</p>
+             </div>
+             <hr>
+             <div class = "comment">Feel the atmosphere of the new year at home</div> 
+             <a href = "branches.html" id = "button1" class = "buttons" v-on:mouseover = "change()" v-on:mouseout = "back()"> Register </a>
+            </div>
+            
+            <div class = "ContainerOffOn" id = "ContainerOnline">
+             <p class = "OffOnVisit">Online Visit</p>
+             <div class = "infoContainer">
+                <p class = "textInInfoContainer"> Santaland At Home will be the online hub for holiday magic. An interactive experience awaits kids of all ages as they travel <i>virtually through the site</i>. They will be able to meet the elves, engage with magical holiday scenes & play fun games. Finally, children will meet St. Nick himself in an interactive video that will bring the wonder of the holiday season to life. </p>
+                <img src="img/onlinevisit.jpg" alt="">
+             </div>
+             <hr>
+             <div class = "comment">Take the opportunity for your joy </div> 
+             <a href = "OnlineRegistration.html" id = "button2" class = "buttons" v-on:mouseover = "change()" v-on:mouseout = "back()"> Register </a>
+            </div>
+         
+            <script>
+                var vue = new Vue({
+                    el:"#button1",
+                    methods :{
+                     change:function(){ 
+                        document.getElementById("button1").style.textDecorationLine="underline";
+                        document.getElementById("button1").style.color = "white";
+                        document.getElementById("button1").style.backgroundColor = "hsl(100, 41%, 45%)";
+
+                     },
+                     back : function(){
+                        document.getElementById("button1").style.textDecorationLine="none";
+                        document.getElementById("button1").style.color = "black";
+                        document.getElementById("button1").style.backgroundColor = "hsl(215, 55%, 42%)";
+                     }
+                    }
+                });
+                var vue2 = new Vue({
+                     el:"#button2",
+                    methods :{
+                     change:function(){ 
+                        document.getElementById("button2").style.textDecorationLine="underline";
+                        document.getElementById("button2").style.color = "white";
+                        document.getElementById("button2").style.backgroundColor = "hsl(100, 41%, 45%)";
+                     },
+                     back : function(){
+                        document.getElementById("button2").style.textDecorationLine="none";
+                        document.getElementById("button2").style.color = "black";
+                        document.getElementById("button2").style.backgroundColor = "hsl(215, 55%, 42%)";
+                     }
+                    }
+                });
+            </script>
+        </div>
+    </section>
+</body>
+</html>

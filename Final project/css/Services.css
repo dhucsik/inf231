@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0px;
+    background-color:cornsilk;
+}
+header{
+    background-image: url('../img/photo_2021-12-23_21-30-16.jpg');
+    width: 100%;
+    padding: 10px 0px; 
+    box-sizing: border-box;
+    border: hsl(0, 0%, 100%) solid 12px;
+    display: flex;
+    z-index: 15;
+ }
+ ul{
+     margin-top: 22px;
+ }
+ a{
+     list-style: none;
+     display: inline;
+     font-size: 40px;
+     margin-right: 70px;
+     font-family: 'Great Vibes', cursive;
+     font-weight: bold;
+     opacity: 0.9;
+     color: black;
+     text-decoration: none;
+ }
+ a:hover{
+     color:rgb(165, 41, 41);
+     text-decoration: underline;
+ }
+ #headerdiv{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+ }
+ #Santaland{
+     color: #750d0d;
+     font-size: 45px;
+     margin-left: 50px;
+     margin-right: 60px;
+     margin-top: 16px;
+     font-family: 'Prata', serif;
+     font-weight: 700;
+ }
+#Services{
+    color: hsla(0, 0%, 0%, 0.938);
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: 'Corinthia', cursive;
+    font-weight:bolder;  
+    margin:20px;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:700px;
+}
+.ContainerOffOn{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border: hsl(0, 0%, 100%) solid 20px;
+    border-radius: 3px;
+    opacity: 0.85;
+}
+.ContainerOffOn:hover{
+    transform: scale(0.97);
+    opacity:1.0;
+}
+.OffOnVisit{
+    text-align:center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    margin-top:20px;
+}
+#ContainerOffline{
+    background-image: url('../img/backgroundimg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right:5px;
+}
+#ContainerOnline{
+    background-image: url('../img/backgroundimg2.jpg');
+    padding-left: 5px;
+}
+.infoContainer{
+    display: flex;
+    box-sizing:border-box;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    opacity: 0.86;
+    border:white solid 8px;
+    width: 97%;
+    height: 38%;
+}
+.textInInfoContainer{
+    margin:18px 7px;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.comment{
+    width: 100%;
+    text-align: center;
+    background-color: hsla(0, 0%, 100%, 0.884);
+    font-size: 38px;
+    font-family: 'Corinthia';
+    font-weight: 600;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 25%;
+    height: 50px;
+    margin-top: 100px;
+    background-color:hsl(215, 55%, 42%);
+    border-radius: 6px;
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
+    color: black;
+    text-decoration:none;
+}
+@media (max-width:1440px){
+    header{
+        width: 100%;
+        border: white solid 10px;
+    }
+    ul{
+        margin-top: 25px;
+    }
+    #Santaland{
+        font-size: 40px;
+        margin-left: 40px;
+        margin-right: 45px;
+        margin-top: 18px;
+    }
+}
+@media (max-width:1024px){
+    header{
+        border: white solid 8px;
+    }
+    ul{
+        margin-top: 18px;
+    }
+    a{
+        font-size: 30px;
+        margin-right: 45px;
+    }
+    #Santaland{
+        font-size: 27px;
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 16px;
+    }
+    #Services{
+        font-size: 55px;
+        margin:12px;
+    }
+    .textInInfoContainer{
+        margin:13px 4px;
+        margin-top:14px ;
+        font-size: 15px;
+    }
+    .comment{
+        background-color: hsla(0, 0%, 100%, 0.884);
+        font-size: 30px;
+        margin-top: 32px;
+    }
+    .OffOnVisit{
+        font-size: 32px;
+        margin-bottom: 33px;
+        margin-top:18px;
+    }
+    .buttons{
+        height: 38px;
+        margin-top: 95px;
+        font-size: 19px;
+    }
+    #mainContainer{
+        height:600px;
+    }
+    .ContainerOffOn{
+        border: hsl(0, 0%, 100%) solid 15px;
+    }
+    .infoContainer{
+        width: 100%;
+        height: 38%;
+    }
+}
+@media (max-width:768px){
+    header{
+        border: white solid 8px;
+    }
+    ul{
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+    a{
+        list-style: none;
+        display: inline;
+        font-size: 25px;
+        margin-right: 22px;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bold;
+        opacity: 0.9;
+        color: black;
+        text-decoration: none;
+    }
+    #Santaland{
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+    #Services{
+        font-size: 50px;
+        letter-spacing: 3px;
+        margin:9px;
+    }
+    #mainContainer{
+        height:510px;
+    }
+    .ContainerOffOn{
+        border: hsl(0, 0%, 100%) solid 9px;
+    }
+    .ContainerOffOn:hover{
+        transform: scale(0.985);
+    }
+    .OffOnVisit{
+        font-size: 27px;
+        margin-top:10px;
+        margin-bottom: 25px;
+    }
+    #ContainerOffline{
+        padding-right:4px;
+    }
+    #ContainerOnline{
+        padding-left: 4px;
+    }
+    .infoContainer{
+        border:white solid 4px;
+        width: 100%;
+        height: 38%;
+    }
+    .textInInfoContainer{
+        margin:14px 4px;
+        font-size: 12px;
+    }
+    .comment{
+        width: 100%;
+        font-size: 26px;
+        margin-top: 18px;
+        padding: 7px;
+        border-radius: 4px;
+    }
+    .buttons{
+        height: 30px;
+        margin-top: 80px;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+}

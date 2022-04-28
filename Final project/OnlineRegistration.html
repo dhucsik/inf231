@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@1,500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/OnlineRegistration.css">
+</head>
+<body>
+    <header>
+        <div id = "headerdiv">
+            <p id = "Santaland">Santaland</p>
+            <ul>
+                <a href="Home.html">Home</a>
+                <a style = "color:rgb(165, 41, 41);" href="Services.html">Services</a>
+                <a href="shop.html"> Online Shop</a>
+                <a href="holiday-joy.html">Holiday Joy</a>
+                <a href="contacts.html">Contacts</a>
+            </ul>
+        </div>
+    </header>
+    <section >
+        <p id = "Welcome"> Welcome! </p>
+        <div id = "mainContainer">
+            <img id = "image" src="img/image.jpg" alt="">
+            
+            <div id = "RegistrationBox">
+              <p id = "Registration"> Registration</p>
+              <form action="">
+                  <label for="names"> First Name:</label><input type="text" class = "names" maxlength="12" placeholder="first name in Latin alphabet" pattern = "[A-Za-z]{2,}">
+                  <label for="names"> Last Name:</label><input type="text" class = "names" maxlength="12" placeholder="last name in Latin alphabet" pattern = "[A-Za-z]{2,}"><br>
+                  <label for="age"> Age:</label><input type="number" min="7" max = "30">
+                  <label for="">Gender: </label><input type="radio" name = "gender" value = "Male" required><label for="">Male </label><input type="radio" name = "gender" value = "Female"><label for="">Female</label><br>
+                  <label for="">Date: </label><input type="date" min="getDate()" required>
+                  <label for="">Start time:</label> <input type="time" id = "time" required><br>
+                  <label for="">Hours: </label> <input type="number" min = "1" max = "3"><br>
+                  <label for="">E-mail: </label> <input type="email" id = "email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required autocomplete="on"> <br>
+                  <label for="">Phone number: </label> <input type="tel" pattern = "+7[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"placeholder="+7(XXX)-XXX-XX-XX"><br>
+                  <label for="">Bank card No:</label> <input type="text" id = "cardNo" maxlength = "16" pattern = "[0-9]{16}"><br>
+                  <label for="">CVV: </label><input type="password" maxlength = "3"><br>
+                  <input type="submit" value = "Submit" id = "submitButton">
+                </form>
+            </div>
+            
+        </div>
+    </section>
+    <script>
+        function getDate(){
+
+        }
+    </script>
+</body>
+</html>

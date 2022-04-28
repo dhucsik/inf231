@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 2s;
+}
+header{
+   background-image: url('../img/photo_2021-12-23_21-30-16.jpg');
+   width: 100%;
+   padding: 10px 0px; 
+   box-sizing: border-box;
+   border: hsl(0, 0%, 100%) solid 12px;
+   display: flex;
+   z-index: 15;
+}
+ul{
+    margin-top: 22px;
+}
+a{
+    list-style: none;
+    display: inline;
+    font-size: 40px;
+    margin-right: 70px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    opacity: 0.9;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(165, 41, 41);
+    text-decoration: underline;
+}
+#headerdiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#Santaland{
+    color: #750d0d;
+    font-size: 45px;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-top: 16px;
+    font-family: 'Prata', serif;
+    font-weight: 700;
+}
+.images{
+    width:350px;
+    height:500px;
+    margin-left: 100px;
+    margin-top: 60px;
+    border: white solid 12px;
+    opacity: 0.95;
+}
+#secondimg{
+    margin-top: 180px;
+}
+#imageContainer{
+    padding:50px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#backgroundtext{
+    position: absolute;
+    font-size: 85px;
+    font-family: 'Mea Culpa', cursive;
+    font-weight: 500;
+    background-color: hsla(0, 0%, 100%, 0.705);
+    margin: 200px 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(165, 41, 41);
+    padding: 15px;
+}
+#feedback{
+    margin: 40px 0px;
+    padding:15px 0px;
+    text-align:center;
+    background-color: hsla(0, 0%, 100%, 0.836);
+    font-size: 4rem;
+    font-family: 'Prata', serif;
+    font-weight: 600;
+    color:rgba(163, 45, 45, 0.9);
+}
+#click{
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    color: rgba(0, 0, 0, 0.836);
+}
+#text{
+    background-color: rgba(255, 255, 255, 0.699);
+    font-size: 35px;
+    color:rgb(165, 41, 41);
+    padding:10px 50px;
+    font-family: 'Staatliches', cursive;
+}
+@media (max-width:1440px){
+    header{
+        width: 100%;
+        border: white solid 10px;
+    }
+    ul{
+        margin-top: 25px;
+    }
+    #Santaland{
+        font-size: 40px;
+        margin-left: 40px;
+        margin-right: 45px;
+        margin-top: 18px;
+    }
+    .images{
+        margin-left: 80px;
+    }
+    #backgroundtext{
+        font-size: 80px;
+        margin: 200px 0px;
+        padding: 11px;
+    }
+    #text{
+        font-size: 30px;
+    }
+}
+@media (max-width:1024px){
+    header{
+        border: white solid 8px;
+    }
+    ul{
+        margin-top: 18px;
+    }
+    a{
+        font-size: 30px;
+        margin-right: 45px;
+    }
+    #Santaland{
+        font-size: 27px;
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 16px;
+    }
+    .images{
+        width:320px;
+        height:470px;
+        margin-left: 110px;
+        border: white solid 9px;
+    }
+    #img3{
+        margin-top: -120px;
+    }
+    #secondimg{
+        margin-top: 390px;
+    }
+    #backgroundtext{
+        font-size: 70px;
+        margin: 600px 0px;
+    }
+    #text{
+        font-size: 27px;
+        padding:15px 50px;
+    }
+    #feedback{
+        margin: 30px 0px;
+        padding:12px 0px;
+        font-size: 3rem;
+    }
+    #click{
+        font-size: 40px;
+        font-family: 'Staatliches', cursive;
+        color: rgba(0, 0, 0, 0.836);
+    }
+    @media (max-width:768px){
+    header{
+        border: white solid 8px;
+    }
+    ul{
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+    a{
+        list-style: none;
+        display: inline;
+        font-size: 25px;
+        margin-right: 22px;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bold;
+        opacity: 0.9;
+        color: black;
+        text-decoration: none;
+    }
+    #Santaland{
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+    .images{
+        width:250px;
+        height:400px;
+        margin-left: 80px;
+        margin-top: 50px;
+        border: white solid 8px;
+    }
+    #secondimg{
+        margin-top: 280px;
+    }
+    #img3{
+        margin-top: -90px;
+    }
+    #imageContainer{
+        padding:20px 0px;
+    }
+    #backgroundtext{
+        font-size: 60px;
+        margin: 400px 0px;
+        padding: 12px;
+    }
+    #text{
+        font-size: 20px;
+        padding:10px 30px;
+    }
+    #feedback{
+        margin: 30px 0px;
+        padding:12px 0px;
+        font-size: 2rem;
+    }
+    #click{
+        font-size: 30px;
+    }
+}
+

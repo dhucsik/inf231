@@ -1,0 +1,50 @@
+.wrapper{
+width : 100%;
+margin: 0 auto;
+}
+
+header{
+height: 100px;
+background: hsl(187, 100%, 57%);
+width: 100%;
+z-index: 12;
+position: fixed;
+}
+
+.logo{
+width: 35%;
+line-height: 100px;
+float: left;
+}
+
+.logo p{
+text-decoration: none;
+font-size: 35px;
+color: hsl(237, 100%, 68%);
+letter-spacing: 3px;
+text-align: center;
+}
+
+nav{
+float: right;
+line-height: 100px;
+margin: 0 100px;
+}
+
+.content{
+top: 100px;
+position: relative;
+background-image:url(img/background.jpg);
+background-size:cover;
+background-attachment: fixed;
+}
+
+.content h1{
+text-align:center;
+}
+
+.col-sm{
+background-color: white;
+margin: 8px;
+max-width: 30%;
+}

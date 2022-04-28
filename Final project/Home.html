@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body background= "img/IMG_2614.JPG">
+    <header>
+        <div id = "headerdiv">
+            <p id = "Santaland">Santaland</p>
+            <ul>
+                <a style = "color:rgb(165, 41, 41);">Home</a>
+                <a href="Services.html">Services</a>
+                <a href="shop.html"> Online Shop</a>
+                <a href="holiday-joy.html">Holiday Joy</a>
+                <a href="contacts.html">Contacts</a>
+            </ul>
+        </div>
+    </header>
+    <div id="imageContainer">
+        <img src="img/photo_2021-12-23_21-07-55.jpg" id = "img1" v-on:mouseover = "changeSize()" v-on:mouseout = "back()" class = "images" alt="">
+        <img src="img/photo_2021-12-23_21-07-57.jpg" id = "secondimg" v-on:mouseover = "changeSize()" v-on:mouseout = "back()" class = "images" alt="">
+        <img src="img/backgroundimg4.jpg" id = "img3" v-on:mouseover = "changeSize()" v-on:mouseout = "back()" class = "images" alt="">
+    <div id = "backgroundtext">Christmas isn’t a season. It’s a feeling.</div>
+    </div>
+    <p id = "text"><i style = "color:black;font-size: larger;"> New Year  </i>  is the time for people to leave all the bad experiences behind and take a step into the future with positive energy. Everyone prays for their own and their beloved one’s happiness, healthiness and fortune in the coming New Year. For children, a new year feels incomplete without three things - Christmas tree, New year party along with new dresses, and the mandatory New Year essay as a part of their winter holidays homework).</p>
+    <p id = "feedback">More feedbacks -> <a id = "click" href="reviews.html">Click here</a></p>
+ <script>
+        var vuevarForimg1 = new Vue({
+           el:"#img1",
+           methods:{
+               changeSize:function(){
+                   document.getElementById("img1").style.transform = "scale(1.1)";
+                   document.getElementById("img1").style.zIndex = "10";
+               },
+               back:function(){
+                   document.getElementById("img1").style.transform = "scale(1.0)";
+                   document.getElementById("img1").style.zIndex = "0";
+               }
+           }
+        });
+        var vuevarForimg2 = new Vue({
+           el:"#secondimg",
+           methods:{
+               changeSize:function(){
+                   document.getElementById("secondimg").style.transform = "scale(1.1)";
+                   document.getElementById("secondimg").style.zIndex = "10";
+               },
+               back:function(){
+                   document.getElementById("secondimg").style.transform = "scale(1.0)";
+                   document.getElementById("secondimg").style.zIndex = "0";
+               }
+           }
+        });
+        var vuevarForimg3 = new Vue({
+           el:"#img3",
+           methods:{
+               changeSize:function(){
+                   document.getElementById("img3").style.transform = "scale(1.1)";
+                   document.getElementById("img3").style.zIndex = "10";
+               },
+               back:function(){
+                   document.getElementById("img3").style.transform = "scale(1.0)";
+                   document.getElementById("img3").style.zIndex = "0";
+               }
+           }
+        });
+    </script>
+</body>
+</html>

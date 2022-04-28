@@ -1,0 +1,227 @@
+body{
+    margin:0px;
+    background-image:url('../img/backgroundimg3.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+background-image: url('../img/photo_2021-12-23_21-30-16.jpg');
+width: 100%;
+height:115px; 
+box-sizing: border-box;
+border: white solid 12px;
+}
+ul{
+    margin-top: 26px;
+}
+a{
+    list-style: none;
+    display: inline;
+    font-size: 40px;
+    margin-right: 70px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    opacity: 0.9;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(165, 41, 41);
+    text-decoration: underline;
+}
+#headerdiv{
+    display: flex;
+    flex-direction: row;
+}
+#Santaland{
+    color: #750d0d;
+    font-size: 45px;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-top: 16px;
+    font-family: 'Prata', serif;
+    font-weight: 700;
+}
+#Welcome{
+    text-align: center;
+    font-size: 60px;
+    margin: 30px;
+    font-family: 'Parisienne', cursive;
+    font-weight: 500;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 750px;
+}
+#image{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    border: #fae8d1 solid 25px;
+    border-radius: 4px;
+    margin-right: 55px;
+}
+#RegistrationBox{
+    display: flex;
+    flex-direction: column;
+    box-sizing:border-box;
+    background-color: hsla(35, 85%, 82%, 0.945);
+    border: rgba(255, 255, 255, 0.945) solid 10px;
+    width: 45%;
+    height: 90%;
+    margin-top: 40px;
+    padding-left:10px;
+    padding-right: 8px;
+}
+#Registration{
+    text-align: center;
+    font-size: 47px;
+    font-family: 'Damion', cursive;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+form>input{
+    margin-top: 27px;
+    height:23px;
+    margin-right:10px;
+    margin-left: 5px;
+}
+form>label{
+    font-size:22px;
+    margin-left: 6px;
+    font-family: 'Gelasio', serif;
+}
+#email, #cardNo{
+    width:230px;
+}
+#submitButton{
+    width:22%;
+    height:9%;
+    font-size: 2.0vw;
+    background-color: rgb(214, 57, 57);
+    margin-left: 70%;
+    font-family: 'Questrial', sans-serif;
+}
+@media (max-width:1440px){
+    #mainContainer{
+        height: 700px;
+    }
+    #image{
+        border: #fae8d1 solid 21px;
+        border-radius: 4px;
+        margin-right: 52px;
+    }
+    #RegistrationBox{
+        width: 47%;
+    }
+    #Registration{
+        font-size: 43px;
+        margin-bottom: 10px;
+    }
+    form>input{
+        height:20px;
+        margin-right:7px;
+    }
+    form>label{
+        font-size:21px;
+        margin-left: 4px;
+    }
+    #submitButton{
+        font-size: 1.9vw;
+    }
+    .names{
+        width:140px;
+    }
+}
+@media (max-width:1024px){
+    #Welcome{
+        font-size: 55px;
+        margin: 22px;
+    }
+    #mainContainer{
+        height: 600px;
+    }
+    #image{
+        border: #fae8d1 solid 19px;
+        margin-right: 45px;
+    }
+    #RegistrationBox{
+        border: rgba(255, 255, 255, 0.945) solid 8px;
+        height: 92%;
+        margin-top: 25px;
+        padding-left:7px;
+        padding-right: 7px;
+    }
+    #Registration{
+        font-size: 38px;
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    form>input{
+        margin-top: 22px;
+        height:19px;
+        margin-right:8px;
+        margin-left: 4px;
+    }
+    form>label{
+        font-size:18px;
+        margin-left: 4px;
+    }
+    #email, #cardNo{
+        width:200px;
+    }
+    .names{
+        width:90px;
+    }
+}
+@media (max-width:768px){
+    #Welcome{
+        font-size: 47px;
+        margin: 20px;
+    }
+    #mainContainer{
+        height: 510px;
+    }
+    #image{
+        border: #fae8d1 solid 15px;
+        margin-right: 30px;
+    }
+    #RegistrationBox{
+        border: rgba(255, 255, 255, 0.945) solid 6px;
+        margin-top: 20px;
+        padding-left:6px;
+        padding-right: 2px;
+    }
+    #Registration{
+        font-size: 33px;
+        margin-top: 14px;
+        margin-bottom: 9px;
+    }
+    form>input{
+        margin-top: 17px;
+        height:16px;
+        margin-right:7px;
+        margin-left: 3px;
+    }
+    form>label{
+        font-size:14px;
+        margin-left: 1px;
+    }
+    #email, #cardNo{
+        width:170px;
+    }
+    .names{
+        width:63px;
+    }
+    #submitButton{
+        width:22%;
+        height:30px;
+    }
+    #time{
+        width:47px;
+        margin-right: 0px;
+    }
+}
